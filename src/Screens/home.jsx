@@ -9,7 +9,11 @@ const Home = ({ navigation }) => {
       <Button
         title="Go To User Screen"
         onPress={() => {
-          navigation.navigate('User')
+          navigation.navigate('User', {
+            userIdx: 100,
+            userName: 'Skylar',
+            userLastName: 'Choe',
+          })
         }}
       />
     </Container>
