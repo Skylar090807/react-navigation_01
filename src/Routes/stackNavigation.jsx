@@ -9,13 +9,30 @@ const Stack = createNativeStackNavigator()
 
 const StackNavigation = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerStyle: { backgroundColor: '#ececec' },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          color: '#000',
+        },
+      }}
+    >
       <Stack.Screen
         name="Home"
         component={Home}
-        // Screen Title Init
         options={{
+          // Screen Title Init
           title: 'Home Screen Init',
+          // Header Bar Style Init
+          headerStyle: { backgroundColor: 'lightpink' },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            color: '#fff',
+          },
         }}
       />
       <Stack.Screen

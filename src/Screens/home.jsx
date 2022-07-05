@@ -23,7 +23,7 @@ const Home = ({ navigation }) => {
           navigation.setOptions({
             title: 'Changed Title -> Home',
             // Header Bar Style
-            headerStyle: { backgroundColor: 'lightpink' },
+            headerStyle: { backgroundColor: 'purple' },
             headerTintColor: '#fff',
           })
         }}
