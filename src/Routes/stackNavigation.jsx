@@ -1,7 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import Home from '../Screens/home'
 import User from '../Screens/user'
+import ImageComponent from '../components/imageComponent'
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
@@ -26,6 +27,9 @@ const StackNavigation = () => {
         options={{
           // Screen Title Init
           title: 'Home Screen Init',
+          // ImageComponent에 선언 된 image headerTitle에 삽입
+          headerTitle: () => <ImageComponent />,
+
           // Header Bar Style Init
           headerStyle: { backgroundColor: 'lightpink' },
           headerTintColor: '#fff',
