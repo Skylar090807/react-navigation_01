@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Button, Alert } from 'react-native'
+import { Button, Alert } from 'react-native'
 import Home from '../Screens/home'
 import User from '../Screens/user'
 import ImageComponent from '../components/imageComponent'
@@ -64,5 +64,3 @@ const StackNavigation = () => {
 }
 
 export default StackNavigation
-
-const styles = StyleSheet.create({})

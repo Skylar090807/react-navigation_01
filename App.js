@@ -5,11 +5,13 @@ import { StyleSheet, Text, useColorScheme, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 
 import StackNavigation from './src/Routes/stackNavigation'
+import DrawerNavigation from './src/Routes/drawerNavigation'
 
 const App = () => {
   return (
     <NavigationContainer>
-      <StackNavigation />
+      {/* <StackNavigation /> */}
+      <DrawerNavigation />
     </NavigationContainer>
   )
 }
