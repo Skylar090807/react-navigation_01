@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Button } from 'react-native'
+import { StyleSheet, Text, Button, Alert } from 'react-native'
 import React from 'react'
 import { Container } from '../../styles/style'
 
@@ -18,6 +18,15 @@ const User = ({ navigation, route }) => {
         fontWeight: 'bold',
         color: '#fff',
       },
+
+      // Add Button (버튼을 터치하면 router가 이동된다)
+      headerRight: () => (
+        <Button
+          title="Go Home"
+          onPress={() => navigation.navigate('Home')}
+          color="#fff"
+        />
+      ),
     })
   }
 

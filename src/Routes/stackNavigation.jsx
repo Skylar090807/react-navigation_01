@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Button, Alert } from 'react-native'
 import Home from '../Screens/home'
 import User from '../Screens/user'
 import ImageComponent from '../components/imageComponent'
@@ -27,6 +27,7 @@ const StackNavigation = () => {
         options={{
           // Screen Title Init
           title: 'Home Screen Init',
+
           // ImageComponent에 선언 된 image headerTitle에 삽입
           headerTitle: () => <ImageComponent />,
 
@@ -37,6 +38,15 @@ const StackNavigation = () => {
             fontWeight: 'bold',
             color: '#fff',
           },
+
+          // Add Button
+          headerRight: () => (
+            <Button
+              title="info"
+              onPress={() => Alert.alert('This is Information')}
+              color="#fff"
+            />
+          ),
         }}
       />
       <Stack.Screen
