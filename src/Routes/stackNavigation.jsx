@@ -10,8 +10,24 @@ const Stack = createNativeStackNavigator()
 const StackNavigation = () => {
   return (
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="User" component={User} />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        // Screen Title Init
+        options={{
+          title: 'Home Screen Init',
+        }}
+      />
+      <Stack.Screen
+        name="User"
+        component={User}
+        // Stack.Navigator에서 initialRouteName="User"로 설정 후 route 생성 시 initialParams를 사용해 Params를 초기화
+        initialParams={{
+          userIdx: 200,
+          userName: 'Alexis',
+          userLastName: 'Joe',
+        }}
+      />
     </Stack.Navigator>
   )
 }

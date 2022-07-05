@@ -8,6 +8,20 @@ const User = ({ navigation, route }) => {
   const userName = params ? params.userName : null
   const userLastName = params ? params.userLastName : null
 
+  const headerBarStyle = () => {
+    navigation.setOptions({
+      title: 'User Screen in User.jsx',
+      // Header Bar Style
+      headerStyle: { backgroundColor: 'lightblue' },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        color: '#fff',
+      },
+    })
+  }
+
+  headerBarStyle()
   return (
     <Container>
       <Text>User Screen</Text>
