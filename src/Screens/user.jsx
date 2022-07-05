@@ -1,6 +1,7 @@
-import { StyleSheet, Text, Button, Alert } from 'react-native'
+import { StyleSheet, Text, Button, Alert, Linking } from 'react-native'
 import React from 'react'
 import { Container } from '../../styles/style'
+import UserLogo from '../components/userlogo'
 
 const User = ({ navigation, route }) => {
   const { params } = route
@@ -27,6 +28,8 @@ const User = ({ navigation, route }) => {
           color="#fff"
         />
       ),
+      // icon 넣기
+      drawerIcon: () => <UserLogo />,
     })
   }
 

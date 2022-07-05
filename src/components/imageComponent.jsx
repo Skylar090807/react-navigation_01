@@ -8,7 +8,7 @@ const ImageComponent = () => {
     //   style={{ width: 40, height: 40 }}
     //   source={require('../assets/images/home_black_512px.png')}
     // />
-    <Image style={{ width: 40, height: 40 }} source={HomeIcon} />
+    <Image style={{ width: 20, height: 20 }} source={HomeIcon} />
   )
 }
 
