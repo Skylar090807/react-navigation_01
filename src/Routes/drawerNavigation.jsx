@@ -11,6 +11,7 @@ import {
   DrawerItemList,
   DrawerItem,
 } from '@react-navigation/drawer'
+import SlideDrawer from './slideDrawer'
 
 const Drawer = createDrawerNavigator()
 
@@ -57,7 +58,8 @@ const DrawerNavigation = () => {
         drawerActiveBackgroundColor: 'lightblue',
       }}
       // drawerContent return: Function(React element to render as the content of the drawer)
-      drawerContent={props => <CutomDrawerContent {...props} />}
+      // drawerContent={props => <CutomDrawerContent {...props} />}
+      drawerContent={props => <SlideDrawer {...props} />}
     >
       <Drawer.Screen
         name="Home"
