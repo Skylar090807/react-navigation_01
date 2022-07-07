@@ -1,4 +1,4 @@
-import { Alert, StyleSheet, Text, View } from 'react-native'
+import { Alert } from 'react-native'
 import React from 'react'
 import Home from '../Screens/home'
 import User from '../Screens/user'

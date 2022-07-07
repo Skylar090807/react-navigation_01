@@ -2,7 +2,9 @@ import { StyleSheet, Text, Button } from 'react-native'
 import React from 'react'
 import { Container } from '../../styles/style'
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation, route }) => {
+  // params passing 확인
+  console.warn(route)
   return (
     <Container>
       <Text>Home Screen</Text>

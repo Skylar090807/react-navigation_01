@@ -1,8 +1,10 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Button } from 'react-native'
 import React from 'react'
 import { Container, TextStyle } from '../../../styles/style'
 
-const HomeTab = () => {
+const HomeTab = ({ navigation, route }) => {
+  // params passing 확인
+  // console.warn(route)
   return (
     <Container>
       <View>
@@ -14,6 +16,12 @@ const HomeTab = () => {
         />
       </View>
       <TextStyle>Home</TextStyle>
+      <Button
+        title="Go To Stack Navigation Home"
+        onPress={() => {
+          navigation.navigate('Home_Stack')
+        }}
+      />
     </Container>
   )
 }

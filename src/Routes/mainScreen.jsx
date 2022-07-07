@@ -3,38 +3,11 @@ import React from 'react'
 import HomeTab from '../Screens/BottomTabs/homeTab'
 import BookingTab from '../Screens/BottomTabs/bookingTab'
 import SettingsTab from '../Screens/BottomTabs/settingsTab'
-// import TabBarImageIcon from '../components/tabBarImageIcon'
-// import HomeWhite from '../assets/images/home_white_512px.png'
 import Ionicons from 'react-native-vector-icons/dist/Ionicons'
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 const Tab = createBottomTabNavigator()
-
-// const TabBarImageIcon = (focused, name) => {
-//   let ImageIconPath
-
-//   if (name === 'Home Tab') {
-//     ImageIconPath = focused
-//       ? require('../assets/images/home_black_512px.png')
-//       : require('../assets/images/home_white_512px.png')
-//   } else if (name === 'Booking Tab') {
-//     ImageIconPath = focused
-//       ? require('../assets/images/booking_black_512px.png')
-//       : require('../assets/images/booking_white_512px.png')
-//   } else if (name === 'Settings Tab') {
-//     ImageIconPath = focused
-//       ? require('../assets/images/settings_black_512px.png')
-//       : require('../assets/images/settings_white_512px.png')
-//   }
-
-//   return (
-//     <Image
-//       source={ImageIconPath}
-//       style={{ width: focused ? 30 : 20, height: focused ? 30 : 20 }}
-//     />
-//   )
-// }
 
 const TabBarVectorIcon = (focused, name) => {
   let IconName
@@ -51,7 +24,7 @@ const TabBarVectorIcon = (focused, name) => {
   return <Ionicons name={IconName} size={iconSize} />
 }
 
-const BottomTabsNavigation = () => {
+const MainScreen = () => {
   return (
     <Tab.Navigator
       initialRouteName="Home Tab"
@@ -71,22 +44,11 @@ const BottomTabsNavigation = () => {
         // tabBarLabelPosition: 'beside-icon',
       })}
     >
-      <Tab.Screen
-        name="Home Tab"
-        component={HomeTab}
-        options={
-          {
-            // 개별 icon 적용
-            // tabBarIcon: () => (
-            //   <Image source={HomeWhite} style={{ width: 20, height: 20 }} />
-            // ),
-          }
-        }
-      />
+      <Tab.Screen name="Home Tab" component={HomeTab} />
       <Tab.Screen name="Booking Tab" component={BookingTab} />
       <Tab.Screen name="Settings Tab" component={SettingsTab} />
     </Tab.Navigator>
   )
 }
 
-export default BottomTabsNavigation
+export default MainScreen
