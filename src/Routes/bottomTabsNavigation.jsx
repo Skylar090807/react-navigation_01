@@ -3,7 +3,8 @@ import React from 'react'
 import HomeTab from '../Screens/BottomTabs/homeTab'
 import BookingTab from '../Screens/BottomTabs/bookingTab'
 import SettingsTab from '../Screens/BottomTabs/settingsTab'
-import HomeWhite from '../assets/images/home_white_512px.png'
+// import TabBarImageIcon from '../components/tabBarImageIcon'
+// import HomeWhite from '../assets/images/home_white_512px.png'
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
