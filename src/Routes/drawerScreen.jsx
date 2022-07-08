@@ -1,7 +1,4 @@
 import React from 'react'
-import Home from '../Screens/home'
-import User from '../Screens/user'
-import ImageComponent from '../components/imageComponent'
 
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import SlideDrawer from './slideDrawer'
@@ -28,7 +25,7 @@ const DrawerScreen = () => {
       // drawerContent return: Function(React element to render as the content of the drawer)
       drawerContent={props => <SlideDrawer {...props} />}
     >
-      <Drawer.Screen name="Routte" component={MainScreen} />
+      <Drawer.Screen name="Route" component={MainScreen} />
     </Drawer.Navigator>
   )
 }

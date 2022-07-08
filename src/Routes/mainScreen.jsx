@@ -1,4 +1,3 @@
-import { Image } from 'react-native'
 import React from 'react'
 import HomeTab from '../Screens/BottomTabs/homeTab'
 import BookingTab from '../Screens/BottomTabs/bookingTab'

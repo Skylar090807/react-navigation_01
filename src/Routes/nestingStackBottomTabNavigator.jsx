@@ -1,5 +1,7 @@
 /*
-  Nesting Navigator 구조
+  Nesting Navigator 구조 1
+  
+  Stack.Navigator
     - Tab Navigator A
       - Tab Screen A-1
       = Tab Screen A-2
